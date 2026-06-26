@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Book a Free Trial Lesson — Alba English</title>
+<meta name="description" content="Book your free online trial lesson with a native English tutor. Tell us your level and goals and we'll match you with the right tutor." />
+<link rel="icon" type="image/png" href="images/favicon.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles/styles.css" />
+</head>
+<body>
+
+<header class="site-head">
+  <div class="wrap head-inner">
+    <a href="index.html" class="brand" aria-label="Alba English home"><img src="images/logo.png" alt="Alba English" /></a>
+    <nav class="nav" id="nav" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="exams.html">Exams &amp; materials</a>
+      <a href="tutors.html">Tutors</a>
+      <a href="contact.html">Contact</a>
+      <a href="login.html" class="nav-only-mobile">Log in</a>
+      <a href="book.html" class="nav-only-mobile">Book a free trial</a>
+    </nav>
+    <div class="head-cta">
+      <a href="login.html" class="head-login">Log in</a>
+      <a href="book.html" class="btn btn-primary btn--sm">Book a free trial</a>
+      <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="nav"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<section class="section" data-screen-label="Book a lesson" style="padding-top:clamp(40px,5vw,72px);">
+  <div class="wrap">
+    <div class="split" style="align-items:start;gap:clamp(36px,5vw,80px);">
+
+      <!-- Left: reassurance -->
+      <div class="book-aside reveal">
+        <span class="kicker"><span class="no">—</span> Free trial lesson</span>
+        <h1 class="h2" style="margin:18px 0 18px;">Book your free trial and meet your tutor.</h1>
+        <p class="lede">Tell us a little about you and we'll match you with the right native tutor. Your first lesson is on us — no payment, no commitment.</p>
+
+        <ul class="checklist">
+          <li><span class="check" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg></span><span>A friendly 30-minute lesson with a native tutor</span></li>
+          <li><span class="check" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg></span><span>A quick level check (A1–C2) and goal-setting chat</span></li>
+          <li><span class="check" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg></span><span>A personalised plan and clear next steps</span></li>
+          <li><span class="check" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg></span><span>No card required &amp; no obligation to continue</span></li>
+        </ul>
+
+        <div class="book-trust">
+          <div class="av-row" aria-hidden="true"><span class="a"></span><span class="a"></span><span class="a"></span><span class="a"></span></div>
+          <p><span class="stars" aria-hidden="true">★★★★★</span><b>Rated 4.9 / 5</b> by 2,400+ students</p>
+        </div>
+
+        <div class="book-contact" style="margin-top:26px;padding-top:24px;border-top:1px solid var(--line);">
+          <p class="small muted" style="margin-bottom:8px;">Prefer to talk first?</p>
+          <div class="book-contact-links" style="display:flex;flex-direction:column;align-items:flex-start;gap:8px;">
+            <a href="mailto:info@albaenglish.academy" class="link">info@albaenglish.academy</a>
+            <a href="tel:+34625040861" class="link">+34 625 040 861</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: form -->
+      <div class="reveal d1">
+        <div class="form-card">
+          <form id="trialForm" data-validate data-success="#trialSuccess" novalidate>
+            <h2 class="h3" style="margin-bottom:6px;">Request your free trial</h2>
+            <p class="muted small" style="margin-bottom:26px;">Fields marked <span class="req" aria-hidden="true">*</span> are required.</p>
+
+            <div class="field-row">
+              <div class="field">
+                <label for="firstName">First name <span class="req" aria-hidden="true">*</span></label>
+                <input class="input" type="text" id="firstName" name="firstName" autocomplete="given-name" placeholder="Maria" required />
+                <span class="field-err">Please enter your first name.</span>
+              </div>
+              <div class="field">
+                <label for="lastName">Last name <span class="req" aria-hidden="true">*</span></label>
+                <input class="input" type="text" id="lastName" name="lastName" autocomplete="family-name" placeholder="García" required />
+                <span class="field-err">Please enter your last name.</span>
+              </div>
+            </div>
+
+            <div class="field-row">
+              <div class="field">
+                <label for="email">Email <span class="req" aria-hidden="true">*</span></label>
+                <input class="input" type="email" id="email" name="email" autocomplete="email" placeholder="you@example.com" required />
+                <span class="field-err">Please enter a valid email address.</span>
+              </div>
+              <div class="field">
+                <label for="phone">Phone <span class="hint">(optional)</span></label>
+                <input class="input" type="tel" id="phone" name="phone" autocomplete="tel" placeholder="+34 600 000 000" />
+              </div>
+            </div>
+
+            <div class="field">
+              <label>Your current level <span class="req" aria-hidden="true">*</span></label>
+              <span class="hint" style="margin-top:-2px;">Not sure? Choose your best guess — we'll confirm in the trial.</span>
+              <div class="chips" role="radiogroup" aria-label="Your current level">
+                <span class="chip"><input type="radio" id="lvl-beg" name="level" value="Beginner (A1–A2)" required /><label for="lvl-beg">Beginner (A1–A2)</label></span>
+                <span class="chip"><input type="radio" id="lvl-int" name="level" value="Intermediate (B1–B2)" /><label for="lvl-int">Intermediate (B1–B2)</label></span>
+                <span class="chip"><input type="radio" id="lvl-adv" name="level" value="Advanced (C1–C2)" /><label for="lvl-adv">Advanced (C1–C2)</label></span>
+                <span class="chip"><input type="radio" id="lvl-unsure" name="level" value="Not sure" /><label for="lvl-unsure">Not sure</label></span>
+              </div>
+              <span class="field-err">Please choose your level.</span>
+            </div>
+
+            <div class="field">
+              <label for="goal">Your main goal <span class="req" aria-hidden="true">*</span></label>
+              <select class="select" id="goal" name="goal" required>
+                <option value="" disabled selected>Choose what you want to focus on…</option>
+                <option>Pass an exam (Cambridge, IELTS, Trinity…)</option>
+                <option>Improve conversation &amp; fluency</option>
+                <option>Business / professional English</option>
+                <option>School or university support</option>
+                <option>General English improvement</option>
+                <option>Something else</option>
+              </select>
+              <span class="field-err">Please select your main goal.</span>
+            </div>
+
+            <div class="field">
+              <label for="availability">Preferred days &amp; times <span class="hint">(optional)</span></label>
+              <select class="select" id="availability" name="availability">
+                <option value="" disabled selected>When suits you best?</option>
+                <option>Weekday mornings</option>
+                <option>Weekday afternoons</option>
+                <option>Weekday evenings</option>
+                <option>Weekends</option>
+                <option>I'm flexible</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="message">Anything else we should know? <span class="hint">(optional)</span></label>
+              <textarea class="textarea" id="message" name="message" placeholder="Tell us about your goals, exam dates, or any questions…"></textarea>
+            </div>
+
+            <div class="checkbox-row">
+              <input type="checkbox" id="consent" name="consent" required />
+              <label for="consent">I agree to be contacted about my free trial and accept the <a href="#">privacy policy</a>. <span class="req" aria-hidden="true">*</span></label>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn--lg btn--block">Request my free trial <span class="ar" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></button>
+            <p class="muted small" style="text-align:center;margin-top:14px;">We usually reply within one working day.</p>
+          </form>
+
+          <div id="trialSuccess" class="form-success">
+            <div class="fic" aria-hidden="true"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg></div>
+            <h2 class="h3" style="margin-bottom:10px;">Thank you — request received!</h2>
+            <p class="muted" style="max-width:360px;margin:0 auto 22px;">We've got your details and a member of the Alba team will email you within one working day to arrange your free trial lesson.</p>
+            <a href="index.html" class="btn btn-line">Back to home</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <img src="images/logo-cream.png" alt="Alba English" />
+        <p>Online English with native tutors who'll have ye blethering away braw in nae time, a wee bit of craic included, ye ken?</p>
+      </div>
+      <div class="foot-col">
+        <h4>Learn</h4>
+        <ul>
+          <li><a href="exams.html">Exams &amp; materials</a></li>
+          <li><a href="tutors.html">Tutors &amp; booking</a></li>
+          <li><a href="exams.html#how-lessons-work">How it works</a></li>
+          <li><a href="index.html#about">About us</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h4>Academy</h4>
+        <ul>
+          <li><a href="book.html">Book a free trial</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="login.html">Log in</a></li>
+          <li><a href="signup.html">Create account</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:info@albaenglish.academy">info@albaenglish.academy</a></li>
+          <li><a href="tel:+34625040861">+34 625 040 861</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 Alba English. All rights reserved.</span>
+      <div class="foot-legal">
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+        <a href="cookies.html">Cookies</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/image-slot.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

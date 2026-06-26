@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Create your account — Alba English</title>
+<meta name="description" content="Create your Alba English account by sending a quick enquiry — just your name and email, and our team will set you up." />
+<link rel="icon" type="image/png" href="images/favicon.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles/styles.css" />
+</head>
+<body>
+
+<header class="site-head">
+  <div class="wrap head-inner">
+    <a href="index.html" class="brand" aria-label="Alba English home"><img src="images/logo.png" alt="Alba English" /></a>
+    <nav class="nav" id="nav" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="exams.html">Exams &amp; materials</a>
+      <a href="tutors.html">Tutors</a>
+      <a href="contact.html">Contact</a>
+      <a href="login.html" class="nav-only-mobile">Log in</a>
+      <a href="book.html" class="nav-only-mobile">Book a free trial</a>
+    </nav>
+    <div class="head-cta">
+      <a href="login.html" class="head-login">Log in</a>
+      <a href="book.html" class="btn btn-primary btn--sm">Book a free trial</a>
+      <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="nav"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<!-- ===== PAGE HEAD ===== -->
+<section class="page-head" data-screen-label="Create account hero">
+  <div class="wrap">
+    <span class="kicker reveal"><span class="no">—</span> Create your account</span>
+    <h1 class="reveal d1">Start with a <span class="it">quick enquiry.</span></h1>
+    <p class="lede reveal d1" style="margin-top:24px;max-width:54ch;">To set up your account, just send us a short enquiry. Leave your name and email below and a member of the Alba team will be in touch to get you started with a free trial lesson.</p>
+  </div>
+</section>
+
+<!-- ===== ENQUIRY FORM ===== -->
+<section class="section--snug" data-screen-label="Enquiry form">
+  <div class="wrap signup-wrap">
+    <div class="form-card reveal">
+      <form id="signupForm" data-validate data-success="#signupSuccess" novalidate>
+        <h2 class="h3" style="margin-bottom:6px;">Send your enquiry</h2>
+        <p class="muted small" style="margin-bottom:26px;">Fields marked <span class="req" aria-hidden="true">*</span> are required.</p>
+        <div class="field">
+          <label for="fullName">Name <span class="req" aria-hidden="true">*</span></label>
+          <input class="input" type="text" id="fullName" name="fullName" autocomplete="name" placeholder="Lucas Fernández" required />
+          <span class="field-err">Please enter your name.</span>
+        </div>
+        <div class="field">
+          <label for="email">Email <span class="req" aria-hidden="true">*</span></label>
+          <input class="input" type="email" id="email" name="email" autocomplete="email" placeholder="you@example.com" required />
+          <span class="field-err">Please enter a valid email address.</span>
+        </div>
+        <button type="submit" class="btn btn-primary btn--lg btn--block">Send enquiry <span class="ar" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></button>
+      </form>
+
+      <div id="signupSuccess" class="form-success">
+        <div class="fic" aria-hidden="true"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg></div>
+        <h2 class="h3" style="margin-bottom:10px;">Enquiry sent — thank you!</h2>
+        <p class="muted" style="max-width:360px;margin:0 auto 22px;">We've received your details and a member of the Alba team will be in touch within one working day to set up your account and book your free trial.</p>
+        <a href="index.html" class="btn btn-line">Back to home</a>
+      </div>
+
+      <p class="auth-alt" style="margin-top:24px;">Already have an account? <a href="login.html">Log in</a></p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <img src="images/logo-cream.png" alt="Alba English" />
+        <p>Online English with native tutors who'll have ye blethering away braw in nae time, a wee bit of craic included, ye ken?</p>
+      </div>
+      <div class="foot-col">
+        <h4>Learn</h4>
+        <ul>
+          <li><a href="exams.html">Exams &amp; materials</a></li>
+          <li><a href="tutors.html">Tutors &amp; booking</a></li>
+          <li><a href="exams.html#how-lessons-work">How it works</a></li>
+          <li><a href="index.html#about">About us</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h4>Academy</h4>
+        <ul>
+          <li><a href="book.html">Book a free trial</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="login.html">Log in</a></li>
+          <li><a href="signup.html">Create account</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:info@albaenglish.academy">info@albaenglish.academy</a></li>
+          <li><a href="tel:+34625040861">+34 625 040 861</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 Alba English. All rights reserved.</span>
+      <div class="foot-legal">
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+        <a href="cookies.html">Cookies</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
