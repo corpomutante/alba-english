@@ -1,180 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sign Up — Alba English</title>
-<link rel="icon" type="image/png" href="images/favicon.png">
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/styles.css"/>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Create your account — Alba English</title>
+<meta name="description" content="Create your Alba English account by sending a quick enquiry — just your name and email, and our team will set you up." />
+<link rel="icon" type="image/png" href="images/favicon.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles/styles.css" />
 </head>
-<body class="page-auth">
+<body>
 
-<div class="mobile-menu" id="mobileMenu">
-  <button class="mobile-menu-close" id="menuClose" aria-label="Close">
-    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><line x1="1" y1="1" x2="11" y2="11"/><line x1="11" y1="1" x2="1" y2="11"/></svg>
-  </button>
-  <a href="index.html">Home</a>
-  <a href="index.html#courses">English Courses</a>
-  <a href="index.html#classes">Live Classes</a>
-  <a href="book-lesson.html">Book a Lesson</a>
-  <div class="mobile-menu-buttons">
-    <a href="signup.html" class="mobile-menu-btn-outline">Sign In</a>
-    <a href="login.html" class="mobile-menu-btn-solid">Log In</a>
-  </div>
-  <div style="margin-top:auto;padding-top:40px;display:flex;flex-direction:column;align-items:center;gap:16px;">
-    <img src="images/logo-full.png" alt="Alba English" style="height:52px;width:auto;opacity:0.8;">
-    <p style="font-size:11px;color:var(--gray-400);text-align:center;margin:0;">© 2026 Alba English. All Rights Reserved.</p>
-  </div>
-</div>
-
-<nav class="navbar" id="navbar">
-  <a href="index.html" class="nav-logo">
-    <img src="images/logo.png" alt="Alba English" class="nav-logo-img">
-  </a>
-  <ul class="nav-links">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="index.html#courses">English Courses</a></li>
-    <li><a href="index.html#classes">Live Classes</a></li>
-    <li><a href="book-lesson.html">Book a Lesson</a></li>
-  </ul>
-  <div class="nav-right">
-    <a href="signup.html" class="btn-signin">Sign In</a>
-    <a href="login.html" class="btn-login">Log In</a>
-    <button class="hamburger" id="hamburger" aria-label="Menu">
-      <span></span><span></span><span></span>
-    </button>
-  </div>
-</nav>
-
-<div class="page-wrap">
-
-  <div class="image-panel">
-    <div class="slide active first-load"><img src="images/scottish-cow.jpg" alt="Highland Cow" style="object-position:center 30%;"></div>
-    <div class="slide"><img src="images/thistle.jpg" alt="Scottish Thistle"></div>
-    <div class="slide"><img src="images/skye.jpg" alt="Isle of Skye"></div>
-    <div class="image-overlay"></div>
-    <div class="image-features">
-      <h2 class="image-features-title">Start speaking English with confidence today</h2>
-      <ul class="feature-list">
-        <li class="feature-item"><span class="feature-icon"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>Native-speaking tutors from the UK &amp; Ireland</li>
-        <li class="feature-item"><span class="feature-icon"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>Live online classes that fit your schedule</li>
-        <li class="feature-item"><span class="feature-icon"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>Exam prep for Cambridge, IELTS, APTIS &amp; more</li>
-        <li class="feature-item"><span class="feature-icon"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>Free PDF workbook with your first lesson</li>
-      </ul>
-    </div>
-    <div class="slide-dots" id="slideDots">
-      <button class="slide-dot active" data-i="0"></button>
-      <button class="slide-dot" data-i="1"></button>
-      <button class="slide-dot" data-i="2"></button>
+<header class="site-head">
+  <div class="wrap head-inner">
+    <a href="index.html" class="brand" aria-label="Alba English home"><img src="images/logo.png" alt="Alba English" /></a>
+    <nav class="nav" id="nav" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="exams.html">Exams &amp; materials</a>
+      <a href="tutors.html">Tutors</a>
+      <a href="contact.html">Contact</a>
+      <a href="login.html" class="nav-only-mobile">Log in</a>
+      <a href="book.html" class="nav-only-mobile">Book a free trial</a>
+    </nav>
+    <div class="head-cta">
+      <a href="login.html" class="head-login">Log in</a>
+      <a href="book.html" class="btn btn-primary btn--sm">Book a free trial</a>
+      <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="nav"><span></span><span></span><span></span></button>
     </div>
   </div>
+</header>
 
-  <section class="form-panel">
-    <div class="form-card">
-      <div class="form-eyebrow">Free to join</div>
-      <h1 class="form-title">Create your account</h1>
-      <p class="form-subtitle">Join thousands of students already improving their English with Alba.</p>
-      <form id="signupForm" novalidate>
-        <div class="form-row">
-          <div class="form-group">
-            <label for="firstname">First name</label>
-            <input type="text" id="firstname" name="firstname" placeholder="María" autocomplete="given-name" required>
-          </div>
-          <div class="form-group">
-            <label for="lastname">Last name</label>
-            <input type="text" id="lastname" name="lastname" placeholder="García" autocomplete="family-name" required>
-          </div>
+<main>
+
+<!-- ===== PAGE HEAD ===== -->
+<section class="page-head" data-screen-label="Create account hero">
+  <div class="wrap">
+    <span class="kicker reveal"><span class="no">—</span> Create your account</span>
+    <h1 class="reveal d1">Start with a <span class="it">quick enquiry.</span></h1>
+    <p class="lede reveal d1" style="margin-top:24px;max-width:54ch;">To set up your account, just send us a short enquiry. Leave your name and email below and a member of the Alba team will be in touch to get you started with a free trial lesson.</p>
+  </div>
+</section>
+
+<!-- ===== ENQUIRY FORM ===== -->
+<section class="section--snug" data-screen-label="Enquiry form">
+  <div class="wrap signup-wrap">
+    <div class="form-card reveal">
+      <form id="signupForm" data-validate data-success="#signupSuccess" novalidate>
+        <h2 class="h3" style="margin-bottom:6px;">Send your enquiry</h2>
+        <p class="muted small" style="margin-bottom:26px;">Fields marked <span class="req" aria-hidden="true">*</span> are required.</p>
+        <div class="field">
+          <label for="fullName">Name <span class="req" aria-hidden="true">*</span></label>
+          <input class="input" type="text" id="fullName" name="fullName" autocomplete="name" placeholder="Lucas Fernández" required />
+          <span class="field-err">Please enter your name.</span>
         </div>
-        <div class="form-group">
-          <label for="email">Email address</label>
-          <input type="email" id="email" name="email" placeholder="you@example.com" autocomplete="email" required>
+        <div class="field">
+          <label for="email">Email <span class="req" aria-hidden="true">*</span></label>
+          <input class="input" type="email" id="email" name="email" autocomplete="email" placeholder="you@example.com" required />
+          <span class="field-err">Please enter a valid email address.</span>
         </div>
-        <div class="form-group">
-          <label for="level">Your current English level</label>
-          <select id="level" name="level">
-            <option value="" disabled selected>Choose your level…</option>
-            <option value="beginner">Beginner (A1–A2)</option>
-            <option value="intermediate">Intermediate (B1)</option>
-            <option value="upper">Upper Intermediate (B2)</option>
-            <option value="advanced">Advanced (C1)</option>
-            <option value="mastery">Mastery (C2)</option>
-            <option value="unsure">Not sure yet</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label for="password">Password</label>
-          <div class="input-wrap">
-            <input type="password" id="password" name="password" placeholder="Create a strong password" autocomplete="new-password" required>
-            <button type="button" class="toggle-pw" id="togglePw">
-              <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
-            </button>
-          </div>
-          <div class="strength-bar"><div class="strength-segment" id="s1"></div><div class="strength-segment" id="s2"></div><div class="strength-segment" id="s3"></div><div class="strength-segment" id="s4"></div></div>
-          <span class="strength-label" id="strengthLabel"></span>
-        </div>
-        <div class="checkbox-group">
-          <input type="checkbox" id="terms" name="terms">
-          <label class="checkbox-label" for="terms">I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>.</label>
-        </div>
-        <div id="signupMsg" style="display:none;font-size:13px;color:var(--emerald);text-align:center;margin-bottom:12px;font-weight:600;"></div>
-        <button type="submit" class="btn-submit" id="signupBtn">
-          Create Account
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-        </button>
+        <button type="submit" class="btn btn-primary btn--lg btn--block">Send enquiry <span class="ar" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></button>
       </form>
-      <p class="form-note" style="margin-top:24px;">Already have an account? <a href="login.html">Log in here</a></p>
-    </div>
-  </section>
 
-</div>
+      <div id="signupSuccess" class="form-success">
+        <div class="fic" aria-hidden="true"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg></div>
+        <h2 class="h3" style="margin-bottom:10px;">Enquiry sent — thank you!</h2>
+        <p class="muted" style="max-width:360px;margin:0 auto 22px;">We've received your details and a member of the Alba team will be in touch within one working day to set up your account and book your free trial.</p>
+        <a href="index.html" class="btn btn-line">Back to home</a>
+      </div>
 
-<footer>
-  <div class="footer-top">
-    <div>
-      <a href="index.html" class="footer-logo">
-        <img src="images/logo-full.png" alt="Alba English" style="height:56px;width:auto;filter:brightness(0) invert(1);opacity:0.9;">
-      </a>
-      <p class="footer-tagline">Helping students speak English confidently from anywhere in the world.</p>
-    </div>
-    <div>
-      <div class="footer-col-title">Navigation</div>
-      <ul class="footer-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="index.html#courses">English Courses</a></li>
-        <li><a href="index.html#classes">Live Classes</a></li>
-        <li><a href="book-lesson.html">Book a Lesson</a></li>
-      </ul>
-    </div>
-    <div>
-      <div class="footer-col-title">English Courses</div>
-      <ul class="footer-links">
-        <li><a href="index.html#courses">Starter English</a></li>
-        <li><a href="index.html#courses">Conversation Lab</a></li>
-        <li><a href="index.html#courses">Exam Mastery</a></li>
-      </ul>
-    </div>
-    <div>
-      <div class="footer-col-title">Contact</div>
-      <ul class="footer-links">
-        <li><a href="#">Centro de Estudios Cubick</a></li>
-        <li><a href="#">Rúa Manuel Pereira, 22, 32003 Ourense</a></li>
-        <li><a href="mailto:info@albaenglish.academy">info@albaenglish.academy</a></li>
-      </ul>
+      <p class="auth-alt" style="margin-top:24px;">Already have an account? <a href="login.html">Log in</a></p>
     </div>
   </div>
-  <div class="footer-bottom">
-    <div class="footer-subnav">
-      <a href="#" class="up-btn">Back tae the top ↑</a>
+</section>
+
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <img src="images/logo-cream.png" alt="Alba English" />
+        <p>Online English with native tutors who'll have ye blethering away braw in nae time, a wee bit of craic included, ye ken?</p>
+      </div>
+      <div class="foot-col">
+        <h4>Learn</h4>
+        <ul>
+          <li><a href="exams.html">Exams &amp; materials</a></li>
+          <li><a href="tutors.html">Tutors &amp; booking</a></li>
+          <li><a href="exams.html#how-lessons-work">How it works</a></li>
+          <li><a href="index.html#about">About us</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h4>Academy</h4>
+        <ul>
+          <li><a href="book.html">Book a free trial</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="login.html">Log in</a></li>
+          <li><a href="signup.html">Create account</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:info@albaenglish.academy">info@albaenglish.academy</a></li>
+          <li><a href="tel:+34625040861">+34 625 040 861</a></li>
+        </ul>
+      </div>
     </div>
-    <span class="footer-copy">© 2026 Alba English. All Rights Reserved.</span>
+    <div class="foot-bottom">
+      <span>© 2026 Alba English. All rights reserved.</span>
+      <div class="foot-legal">
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+        <a href="cookies.html">Cookies</a>
+      </div>
+    </div>
   </div>
 </footer>
 
-<a href="https://wa.me/34625040861?text=Hola%2C%20me%20gustar%C3%ADa%20obtener%20m%C3%A1s%20informaci%C3%B3n%20sobre%20las%20clases%20de%20ingl%C3%A9s." class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
-  <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M16 0C7.164 0 0 7.163 0 16c0 2.822.738 5.469 2.031 7.766L0 32l8.469-2.016A15.93 15.93 0 0 0 16 32c8.836 0 16-7.163 16-16S24.836 0 16 0zm0 29.333a13.27 13.27 0 0 1-6.771-1.854l-.485-.287-5.026 1.196 1.228-4.896-.317-.502A13.236 13.236 0 0 1 2.667 16C2.667 8.636 8.636 2.667 16 2.667S29.333 8.636 29.333 16 23.364 29.333 16 29.333zm7.307-9.907c-.4-.2-2.364-1.164-2.731-1.298-.367-.133-.633-.2-.9.2-.267.4-1.032 1.298-1.265 1.565-.233.267-.467.3-.867.1-.4-.2-1.688-.623-3.214-1.98-1.188-1.057-1.99-2.363-2.222-2.763-.234-.4-.025-.617.175-.816.18-.18.4-.467.6-.7.2-.233.267-.4.4-.667.133-.267.067-.5-.033-.7-.1-.2-.9-2.166-1.233-2.966-.324-.78-.654-.674-.9-.686l-.767-.013c-.267 0-.7.1-1.067.5s-1.4 1.366-1.4 3.333 1.433 3.866 1.633 4.133c.2.267 2.82 4.3 6.833 6.033.955.413 1.7.66 2.281.845.958.305 1.831.262 2.52.159.769-.114 2.364-.966 2.697-1.9.333-.933.333-1.733.233-1.9-.1-.167-.367-.267-.767-.467z"/></svg>
-</a>
-
-<script src="js/script.js" defer></script>
+<script src="js/script.js"></script>
 </body>
 </html>
