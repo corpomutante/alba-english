@@ -1,684 +1,537 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Alba English Academy Online</title>
-<link href="images/favicon.png" rel="icon" type="image/png"/>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400&amp;family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&amp;display=swap" rel="stylesheet"/>
-<link href="css/styles.css" rel="stylesheet"/>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Alba English — Online English Academy with Native Tutors</title>
+<meta name="description" content="Alba English is an online academy where every class is taught live by a qualified native tutor. Flexible lessons, exam preparation and updated materials. Book a free trial." />
+<link rel="icon" type="image/png" href="images/favicon.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles/styles.css" />
 </head>
 <body>
 
-<div class="mobile-menu" id="mobileMenu">
-<button aria-label="Close menu" class="mobile-menu-close" id="menuClose">
-<svg fill="none" height="12" stroke="currentColor" stroke-linecap="round" stroke-width="1.5" viewbox="0 0 12 12" width="12">
-<line x1="1" x2="11" y1="1" y2="11"></line>
-<line x1="11" x2="1" y1="1" y2="11"></line>
-</svg>
-</button>
-<a href="#home">Home</a>
-<a href="#courses">English Courses</a>
-<a href="#classes">Live Classes</a>
-<a href="book-lesson.html">Book a Lesson</a>
-<div class="mobile-menu-buttons">
-<a class="mobile-menu-btn-outline" href="signup.html">Sign In</a>
-<a class="mobile-menu-btn-solid" href="login.html">Log In</a>
-</div>
-<div style="margin-top:auto;padding-top:40px;display:flex;flex-direction:column;align-items:center;gap:16px;">
-<img alt="Alba English" src="images/logo-full.png" style="height:52px;width:auto;opacity:0.8;"/>
-<p style="font-size:11px;color:var(--gray-400);text-align:center;letter-spacing:0.02em;margin:0;">© 2026 Alba English. All Rights Reserved.</p>
-</div>
-</div>
+<header class="site-head">
+  <div class="wrap head-inner">
+    <a href="index.html" class="brand" aria-label="Alba English home"><img src="images/logo.png" alt="Alba English" /></a>
+    <nav class="nav" id="nav" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="exams.html">Exams &amp; materials</a>
+      <a href="tutors.html">Tutors</a>
+      <a href="contact.html">Contact</a>
+      <a href="login.html" class="nav-only-mobile">Log in</a>
+      <a href="book.html" class="nav-only-mobile">Book a free trial</a>
+    </nav>
+    <div class="head-cta">
+      <a href="login.html" class="head-login">Log in</a>
+      <a href="book.html" class="btn btn-primary btn--sm">Book a free trial</a>
+      <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="nav"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
 
-<nav class="navbar" id="navbar">
-<a class="nav-logo" href="#">
-<img alt="Alba English" class="nav-logo-img" src="images/logo.png"/>
-</a>
-<ul class="nav-links">
-<li><a href="#home">Home</a></li>
-<li><a href="#courses">English Courses</a></li>
-<li><a href="#classes">Live Classes</a></li>
-<li><a href="book-lesson.html">Book a Lesson</a></li>
-</ul>
-<div class="nav-right">
-<a class="btn-signin" href="signup.html">Sign In</a>
-<a class="btn-login" href="login.html">Log In</a>
-<button aria-label="Menu" class="hamburger" id="hamburger">
-<span></span><span></span><span></span>
-</button>
-</div>
-</nav>
-<div class="page-wrap" id="pageWrap">
+<main>
 
-<div id="nav-sentinel"></div>
-
-<section class="hero" id="home">
-<img alt="background image" class="hero-img" src="./images/background.jpg"/>
-<div class="hero-overlay"></div>
-
-<div class="hero-avatars fade-up">
-<div class="avatar-stack">
-<div class="avatar">
-<img alt="" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&amp;q=80" style="object-position: center center;"/>
-</div>
-<div class="avatar">
-<img alt="" src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=100&amp;q=80" style="object-position: center center;"/>
-</div>
-<div class="avatar">
-<img alt="Vivien May" src="images/vivien-may.png" style="object-position: center 10%;"/>
-</div>
-</div>
-<p class="hero-social-proof">
-        Improve your English with <span class="gold-text">native teachers</span> who help students gain confidence, speak naturally, and achieve real results online.
-      </p>
-</div>
-
-<div class="hero-bottom">
-<h1 class="hero-title fade-up">
-        Speak English<br/>
-        Confidently With<br/>
-        Native Tutors
-      </h1>
-<div class="fade-up delay-2">
-<a class="btn-hero" href="book-lesson.html">
-          Try a Lesson
-          <span class="btn-hero-arrow">
-<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-<line x1="5" x2="19" y1="19" y2="5"></line>
-<polyline points="9 5 19 5 19 15"></polyline>
-</svg>
-</span>
-</a>
-</div>
-</div>
+<section class="hero" data-screen-label="Home hero">
+  <div class="wrap hero-grid">
+    <div class="reveal">
+      <span class="kicker"><span class="no">—</span> Online English academy</span>
+      <h1>Confident English, taught by tutors who <span class="it">care.</span></h1>
+      <p class="hero-sub">Friendly native tutors, flexible online and in-person classes and structured exam preparation — built around your level, your goals and your schedule. </p>
+      <div class="hero-cta">
+        <a href="book.html" class="btn btn-primary btn--lg">Book a free trial <span class="ar" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+        <a href="#how" class="btn btn-line btn--lg">How classes work</a>
+      </div>
+      <div class="hero-meta">
+        <div class="mi"><span class="stars" aria-hidden="true">★★★★★</span><span>4.9 / 5 from 2,400+ students</span></div>
+        <div class="hero-divider" aria-hidden="true"></div>
+        <div class="mi"><b class="tabular">40+</b><span>countries taught</span></div>
+        <div class="hero-divider" aria-hidden="true"></div>
+        <div class="mi"><b class="tabular">12 yrs</b><span>preparing exam students</span></div>
+      </div>
+    </div>
+    <div class="hero-media reveal d1">
+      <video src="images/home-hero.mp4" autoplay loop muted playsinline aria-label="Online English lesson with a tutor"></video>
+      <span class="hero-tag"><span class="dot" aria-hidden="true"></span>Live 1-to-1 lessons</span>
+    </div>
+  </div>
 </section>
 
-<section class="about">
-<div>
-<div class="about-top">
-<span class="section-tag"><span class="tag-dot"></span>Our Academy</span>
-</div>
-<p class="about-body fade-up">
-        We provide online English lessons with
-<span class="chip">🌍 native tutors</span> for students of every level. From conversational speaking to official exam preparation, our personalised classes create the
-<span class="about-italic">perfect environment for learning naturally and gaining confidence in English. </span>Whether you're learning for work, travel, or exams, we create the ideal space to improve your fluency and communicate with confidence.
-      </p>
-</div>
-<div class="about-right fade-up delay-2">
-<div class="tutor-card">
-<img alt="Vivien May" class="tutor-card-img" src="images/vivien-may.png"/>
-<div class="tutor-card-body">
-<div class="tutor-card-top">
-<div>
-<div class="tutor-card-name">Vivien May</div>
-<div class="tutor-card-role">Certified Native English Teacher</div>
-</div>
-<div>
-<div class="tutor-status"><span class="status-dot"></span> Offline</div>
-<div class="tutor-card-visited">Visited an hour ago</div>
-</div>
-</div>
-<div class="tutor-stars">
-<span class="tutor-star">★</span><span class="tutor-star">★</span><span class="tutor-star">★</span><span class="tutor-star">★</span><span class="tutor-star">★</span>
-<span class="tutor-rating">4.9 (2)</span>
-</div>
-<div class="tutor-details">
-<div class="tutor-detail-row">
-<strong>From</strong>
-<span class="tutor-detail-val">Scotland</span>
-</div>
-<div class="tutor-detail-row">
-<strong>Teach</strong>
-<span class="tutor-detail-val">English — <span class="tutor-detail-accent">Native</span></span>
-</div>
-<div class="tutor-detail-row">
-<strong>Also Speak</strong>
-<span class="tutor-detail-val">Spanish — <span class="tutor-detail-accent">Advanced</span></span>
-</div>
-</div>
-<div class="tutor-card-divider"></div>
-<div class="tutor-card-footer">
-<div class="tutor-footer-left">
-<a class="tutor-workbook" href="#">
-<span class="tutor-workbook-icon">
-<svg fill="none" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewbox="0 0 24 24">
-<path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
-<path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
-</svg>
-</span>
-                Free English Workbook
-              </a>
-</div>
-<a class="btn-book" href="book-lesson.html">Book a Lesson</a>
-</div>
-</div>
-</div>
-</div>
+<section class="exam-marquee" data-screen-label="Official exams" aria-label="Official exams we prepare students for">
+  <span class="mq-label">Official preparation for</span>
+  <div class="mq-viewport">
+    <div class="mq-track">
+      <div class="mq-chip"><img src="images/exams/cambridge.png" alt="Cambridge Assessment English" /></div>
+      <div class="mq-chip"><img src="images/exams/ielts.png" alt="IELTS — British Council" /></div>
+      <div class="mq-chip"><img src="images/exams/oxford.png" alt="Oxford Test of English" /></div>
+      <div class="mq-chip"><img src="images/exams/trinity.png" alt="Trinity College London" /></div>
+      <div class="mq-chip"><img src="images/exams/aptis.png" alt="Aptis — British Council" /></div>
+      <div class="mq-chip"><img src="images/exams/toefl.png" alt="TOEFL — ETS" /></div>
+      <div class="mq-chip"><img src="images/exams/pearson.png" alt="Pearson" /></div>
+      <div class="mq-chip"><img src="images/exams/eoi.png" alt="Escuela Oficial de Idiomas" /></div>
+      <div class="mq-chip" aria-hidden="true"><img src="images/exams/cambridge.png" alt="" /></div>
+      <div class="mq-chip" aria-hidden="true"><img src="images/exams/ielts.png" alt="" /></div>
+      <div class="mq-chip" aria-hidden="true"><img src="images/exams/oxford.png" alt="" /></div>
+      <div class="mq-chip" aria-hidden="true"><img src="images/exams/trinity.png" alt="" /></div>
+      <div class="mq-chip" aria-hidden="true"><img src="images/exams/aptis.png" alt="" /></div>
+      <div class="mq-chip" aria-hidden="true"><img src="images/exams/toefl.png" alt="" /></div>
+      <div class="mq-chip" aria-hidden="true"><img src="images/exams/pearson.png" alt="" /></div>
+      <div class="mq-chip" aria-hidden="true"><img src="images/exams/eoi.png" alt="" /></div>
+    </div>
+  </div>
 </section>
 
-<div class="carousel-section">
-<p class="carousel-label">Official English Qualifications We Prepare You For</p>
-<div class="carousel-track-wrap">
-<div class="carousel-track">
-
-<div class="carousel-item">
-<div class="carousel-logo">
-<img alt="Cambridge Assessment English" class="carousel-logo-img" src="images/cambridge.png"/>
-<span class="carousel-logo-sub">Cambridge Assessment English</span>
-</div>
-</div>
-<div class="carousel-item">
-<div class="carousel-logo">
-<img alt="Oxford Test of English" class="carousel-logo-img" src="images/oxford.png"/>
-<span class="carousel-logo-sub">Oxford Test of English</span>
-</div>
-</div>
-<div class="carousel-item">
-<div class="carousel-logo">
-<img alt="British Council IELTS" class="carousel-logo-img" src="images/ielts.png"/>
-<span class="carousel-logo-sub">British Council IELTS</span>
-</div>
-</div>
-<div class="carousel-item">
-<div class="carousel-logo">
-<img alt="British Council Aptis" class="carousel-logo-img" src="images/aptis.png"/>
-<span class="carousel-logo-sub">British Council Aptis</span>
-</div>
-</div>
-<div class="carousel-item">
-<div class="carousel-logo">
-<img alt="TOEFL" class="carousel-logo-img" src="images/toefl.png"/>
-<span class="carousel-logo-sub">TOEFL — ETS Global</span>
-</div>
-</div>
-<div class="carousel-item">
-<div class="carousel-logo">
-<img alt="Trinity College London Exam" class="carousel-logo-img" src="images/trinity.png"/>
-<span class="carousel-logo-sub">Trinity College London Exam</span>
-</div>
-</div>
-<div class="carousel-item">
-<div class="carousel-logo">
-<img alt="Pearson English Internationl Certificate" class="carousel-logo-img" src="images/pearson.png"/>
-<span class="carousel-logo-sub">Pearson English Internationl Certificate</span>
-</div>
-</div>
-<div class="carousel-item">
-<div class="carousel-logo">
-<img alt="Escuela Oficial de Idiomas" class="carousel-logo-img" src="images/eoi.png"/>
-<span class="carousel-logo-sub">Escuela Oficial de Idiomas</span>
-</div>
-</div>
-
-<div class="carousel-item">
-<div class="carousel-logo">
-<img alt="Cambridge Assessment English" class="carousel-logo-img" src="images/cambridge.png"/>
-<span class="carousel-logo-sub">Cambridge Assessment English</span>
-</div>
-</div>
-<div class="carousel-item">
-<div class="carousel-logo">
-<img alt="Oxford Test of English" class="carousel-logo-img" src="images/oxford.png"/>
-<span class="carousel-logo-sub">Oxford Test of English</span>
-</div>
-</div>
-<div class="carousel-item">
-<div class="carousel-logo">
-<img alt="British Council IELTS" class="carousel-logo-img" src="images/ielts.png"/>
-<span class="carousel-logo-sub">British Council IELTS</span>
-</div>
-</div>
-<div class="carousel-item">
-<div class="carousel-logo">
-<img alt="British Council Aptis" class="carousel-logo-img" src="images/aptis.png"/>
-<span class="carousel-logo-sub">British Council Aptis</span>
-</div>
-</div>
-<div class="carousel-item">
-<div class="carousel-logo">
-<img alt="TOEFL" class="carousel-logo-img" src="images/toefl.png"/>
-<span class="carousel-logo-sub">TOEFL — ETS Global</span>
-</div>
-</div>
-<div class="carousel-item">
-<div class="carousel-logo">
-<img alt="Trinity College London Exam" class="carousel-logo-img" src="images/trinity.png"/>
-<span class="carousel-logo-sub">Trinity College London Exam</span>
-</div>
-</div>
-<div class="carousel-item">
-<div class="carousel-logo">
-<img alt="Pearson English Internationl Certificate" class="carousel-logo-img" src="images/eoi.jpg"/>
-<span class="carousel-logo-sub">Pearson English Internationl Certificate</span>
-</div>
-</div>
-<div class="carousel-item">
-<div class="carousel-logo">
-<img alt="Escuela Oficial de Idiomas" class="carousel-logo-img" src="images/eoi.jpg"/>
-<span class="carousel-logo-sub">Escuela Oficial de Idiomas</span>
-</div>
-</div>
-</div>
-</div>
-</div>
-
-<section class="programs" id="courses">
-<div class="programs-header">
-<span class="section-tag"><span class="tag-dot"></span>English Courses</span>
-<h2 class="programs-title fade-up">Learn English at Your Own Pace</h2>
-<p class="programs-desc fade-up delay-1">Choose from flexible online classes focused on speaking, fluency, grammar, pronunciation, and international exam preparation.</p>
-</div>
-<div class="programs-grid">
-<div class="card card-main fade-up" style="min-height:380px;">
-<img alt="Starter English" src="images/starter.jpg"/>
-<div class="card-main-overlay"></div>
-<div class="card-main-content">
-<div class="card-tags">
-<span class="card-tag">Beginner</span>
-<span class="card-tag">Foundations</span>
-</div>
-<div class="card-title">Starter<br/>English</div>
-</div>
-<div class="card-hover-overlay">
-<p class="card-hover-text">Perfect for beginners who want to build confidence and start speaking English naturally from the very beginning.</p>
-</div>
-</div>
-<div class="cards-right">
-<div class="cards-right-top">
-<div class="card card-small fade-up delay-1">
-<img alt="Conversation English" src="images/conversation.jpg"/>
-<div class="card-small-overlay">
-<div>
-<div class="card-tags" style="margin-bottom:8px;">
-<span class="card-tag">Intermediate</span>
-<span class="card-tag">Speaking</span>
-</div>
-<span class="card-small-title">Conversation<br/>Lab</span>
-</div>
-</div>
-<div class="card-hover-overlay">
-<p class="card-hover-text">Learn to speak more naturally through immersive lessons designed for intermediate learners.</p>
-</div>
-</div>
-<div class="card card-small fade-up delay-2">
-<img alt="Exam English" src="images/exam.jpg"/>
-<div class="card-small-overlay">
-<div>
-<div class="card-tags" style="margin-bottom:8px;">
-<span class="card-tag">Advanced</span>
-<span class="card-tag">Official Exams</span>
-</div>
-<span class="card-small-title">Exam<br/>Mastery</span>
-</div>
-</div>
-<div class="card-hover-overlay">
-<p class="card-hover-text">Intensive preparation classes designed to help you succeed in IELTS, Cambridge, TOEFL, and other official exams.</p>
-</div>
-</div>
-</div>
-<div class="card-info fade-up delay-3">
-<div class="card-info-inner">
-<div>
-<div class="card-info-title">Not sure where to start? Let’s Find Your Level!</div>
-<p class="card-info-desc">Our tutors will help you choose the perfect course for your goals, level, and schedule. Every programme is personalised to help you improve quickly and confidently.</p>
-</div>
-<a class="btn-talk" href="book-lesson.html">Find My Course</a>
-</div>
-</div>
-</div>
-</div>
+<section class="section" id="about" data-screen-label="About">
+  <div class="wrap split">
+    <div class="split-content reveal">
+      <span class="kicker"><span class="no">01</span> Who we are</span>
+      <h2 class="h2" style="margin:18px 0 18px;">Real people, real progress.</h2>
+      <p class="body body--measure">Alba English is a small online academy where every class is taught live by a <span class="em">friendly, qualified native tutor</span> who actually gets to know you. We'll help you get ready for the exams that matter — Cambridge, IELTS, Trinity and more — with <span class="em">up-to-date materials</span> and a plan built around your goals. <span class="em">Come as you are, leave a little more confident</span> — that's the whole idea.<br><br>You can choose the format that works best for you: join us online from wherever you are, or come to our academy for in-person classes.</p>
+    </div>
+    <div class="split-media reveal d1">
+      <video src="images/who-we-are.mp4" autoplay loop muted playsinline aria-label="Alba English academy" style="object-position:50% 22%;"></video>
+    </div>
+  </div>
 </section>
 
-<section class="schedule" id="classes">
-<div class="fade-up">
-<div style="margin-bottom:8px;">
-<span class="section-tag"><span class="tag-dot"></span>Live Classes</span>
-</div>
-<h2 class="schedule-title">Your Weekly Learning Plan</h2>
-<p class="schedule-desc">Discover upcoming classes, pronunciation workshops, and exam preparation sessions tailored to every learning level.</p>
-<div class="schedule-img">
-<img alt="Learning" src="images/learning.jpg"/>
-</div>
-</div>
-<div class="fade-up delay-2">
-<div class="schedule-accordion" id="scheduleAccordion">
-<div class="acc-item active">
-<div class="acc-header">
-<div class="acc-header-left">
-<span class="acc-num">01</span>
-<span class="acc-name">Cambridge Speaking Workshop</span>
-</div>
-<div class="acc-arrow">+</div>
-</div>
-<div class="acc-panel">
-<div class="acc-card">
-<div>
-<p class="acc-card-desc">Prepare for your next English exam with guided exercises, speaking strategies, and personalised tutor feedback.</p>
-<a class="btn-view" href="book-lesson.html">Explore Class →</a>
-</div>
-<div class="acc-card-img"><img alt="Cambridge" src="images/cambridge-sign.webp"/></div>
-</div>
-</div>
-</div>
-<div class="acc-item">
-<div class="acc-header">
-<div class="acc-header-left">
-<span class="acc-num">02</span>
-<span class="acc-name">Business English Live</span>
-</div>
-<div class="acc-arrow">+</div>
-</div>
-<div class="acc-panel">
-<div class="acc-card">
-<div>
-<p class="acc-card-desc">Master professional communication skills for meetings, presentations, emails, and workplace conversations.</p>
-<a class="btn-view" href="book-lesson.html">Explore Class →</a>
-</div>
-<div class="acc-card-img"><img alt="Business English" src="images/conversation.jpg"/></div>
-</div>
-</div>
-</div>
-<div class="acc-item">
-<div class="acc-header">
-<div class="acc-header-left">
-<span class="acc-num">03</span>
-<span class="acc-name">Grammar Essentials</span>
-</div>
-<div class="acc-arrow">+</div>
-</div>
-<div class="acc-panel">
-<div class="acc-card">
-<div>
-<p class="acc-card-desc">Build a strong grammar foundation with clear explanations, real-life examples, and interactive exercises.</p>
-<a class="btn-view" href="book-lesson.html">Explore Class →</a>
-</div>
-<div class="acc-card-img"><img alt="Grammar" src="images/learn.jpg"/></div>
-</div>
-</div>
-</div>
-<div class="acc-item">
-<div class="acc-header">
-<div class="acc-header-left">
-<span class="acc-num">04</span>
-<span class="acc-name">Listening Skills Lab</span>
-</div>
-<div class="acc-arrow">+</div>
-</div>
-<div class="acc-panel">
-<div class="acc-card">
-<div>
-<p class="acc-card-desc">Sharpen your listening comprehension with authentic audio, native-speed conversations, and targeted exercises.</p>
-<a class="btn-view" href="book-lesson.html">Explore Class →</a>
-</div>
-<div class="acc-card-img"><img alt="Listening" src="images/listening.jpg" style="object-position: center bottom;"/></div>
-</div>
-</div>
-</div>
-<div class="acc-item">
-<div class="acc-header">
-<div class="acc-header-left">
-<span class="acc-num">05</span>
-<span class="acc-name">Pronunciation Workshop</span>
-</div>
-<div class="acc-arrow">+</div>
-</div>
-<div class="acc-panel">
-<div class="acc-card">
-<div>
-<p class="acc-card-desc">Sound more natural with phonetic training, accent work, and rhythm and intonation practice with native tutors.</p>
-<a class="btn-view" href="book-lesson.html">Explore Class →</a>
-</div>
-<div class="acc-card-img"><img alt="Pronunciation" src="images/conversation.jpg"/></div>
-</div>
-</div>
-</div>
-<div class="acc-item">
-<div class="acc-header">
-<div class="acc-header-left">
-<span class="acc-num">06</span>
-<span class="acc-name">Exam Preparation</span>
-</div>
-<div class="acc-arrow">+</div>
-</div>
-<div class="acc-panel">
-<div class="acc-card">
-<div>
-<p class="acc-card-desc">Intensive preparation for IELTS, Cambridge, TOEFL, APTIS and EOI exams with native tutors and mock tests.</p>
-<a class="btn-view" href="book-lesson.html">Explore Class →</a>
-</div>
-<div class="acc-card-img"><img alt="Exam Prep" src="images/preparation.jpg"/></div>
-</div>
-</div>
-</div>
-</div>
-</div>
+<section class="section band" data-screen-label="Exam preparation">
+  <div class="wrap">
+    <div class="lead-grid" style="margin-bottom:clamp(28px,4vw,48px);">
+      <div class="lg-aside reveal">
+        <h2 class="h2">Ready for the exam that matters.</h2>
+      </div>
+      <div class="reveal d1">
+        <p class="body">From official certificates to school and university entrance, we prepare you with the real exam format, timed practice and detailed feedback.</p>
+        <a href="exams.html" class="link" style="color:var(--mint);margin-top:20px;">Explore exams &amp; materials <span class="ar" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+      </div>
+    </div>
+    <div class="exam-grid reveal">
+      <a class="exam-cell" href="https://www.cambridgeenglish.org/" target="_blank" rel="noopener noreferrer"><h3 class="h3">Cambridge English</h3><p>Key, Preliminary, First, Advanced and Proficiency, with practice for every paper.</p><span class="ec-foot"><span class="lvl">A2–C2</span><span class="ec-arrow" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></span></a>
+      <a class="exam-cell" href="https://www.ielts.org/" target="_blank" rel="noopener noreferrer"><h3 class="h3">IELTS</h3><p>Academic and General Training, with band-targeted strategies for all four skills.</p><span class="ec-foot"><span class="lvl">Bands 4.0–8.0+</span><span class="ec-arrow" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></span></a>
+      <a class="exam-cell" href="https://www.trinitycollege.com/qualifications/english-language" target="_blank" rel="noopener noreferrer"><h3 class="h3">Trinity</h3><p>GESE and ISE preparation focused on real communication and mock interviews.</p><span class="ec-foot"><span class="lvl">GESE · ISE</span><span class="ec-arrow" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></span></a>
+      <a class="exam-cell" href="https://www.britishcouncil.org/exam/aptis" target="_blank" rel="noopener noreferrer"><h3 class="h3">Aptis</h3><p>British Council computer-based testing for work and study, practised until familiar.</p><span class="ec-foot"><span class="lvl">A1–C2</span><span class="ec-arrow" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></span></a>
+      <a class="exam-cell" href="https://www.educacionyfp.gob.es/contenidos/estudiantes/educacion-adultos/que-puedo-estudiar/idiomas.html" target="_blank" rel="noopener noreferrer"><h3 class="h3">EOI</h3><p>Targeted preparation for the official Escuela Oficial de Idiomas exams.</p><span class="ec-foot"><span class="lvl">A2–C2</span><span class="ec-arrow" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></span></a>
+      <a class="exam-cell" href="https://www.universidades.gob.es/acceso-y-admision-a-la-universidad/" target="_blank" rel="noopener noreferrer"><h3 class="h3">PAU &amp; school</h3><p>Selectividad / EBAU English and everyday support for ESO and Bachillerato.</p><span class="ec-foot"><span class="lvl">School support</span><span class="ec-arrow" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></span></a>
+    </div>
+  </div>
 </section>
 
-<section class="testimonials">
-
-<div class="fade-up">
-<span class="section-tag"><span class="tag-dot"></span>Trusted Learners</span>
-<h2 class="testimonials-title">What Our Students Say</h2>
-<div class="testimonials-img">
-<img alt="Students studying" src="images/students.jpg"/>
-</div>
-</div>
-
-<div class="testi-carousel fade-up delay-1">
-
-<div class="testi-carousel-inner">
-
-<button aria-label="Previous" class="testi-prev" id="testiPrev">
-<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><polygon points="15,4 15,20 5,12" fill="currentColor"/></svg>
-</button>
-
-<div class="testi-slides-wrap" id="testiSlides">
-
-<div class="testi-slide active">
-<span class="testi-quote-big">"</span>
-
-<p class="testi-body-text">Me encantó esta academia, estuve durante un curso en un grupo reducido para preparar el nivel C1 de inglés. La profesora es muy atenta y siempre está dispuesta a entregarte material para ayudarte.</p>
-<div class="testi-author-row">
-<div class="testi-badge" style="background:#251F47;">SO</div>
-<div class="testi-author-meta">
-
-<div class="testi-author-name">Sokhna</div>
-
-<div class="testi-author-exam">Cambridge C1</div>
-</div>
-</div>
-</div>
-
-<div class="testi-slide">
-<span class="testi-quote-big">"</span>
-<p class="testi-body-text">Sitio 100% recomendable si quieres aprender inglés. Fui a clases con Vivian y conseguí sacarme el B2 de Cambridge en tiempo récord. Se adapta al ritmo que le pides y es una excelente profesional.</p>
-<div class="testi-author-row">
-<div class="testi-badge" style="background:#2E7D5E;">SF</div>
-<div class="testi-author-meta">
-<div class="testi-author-name">Saúl Fernández</div>
-<div class="testi-author-exam">Cambridge B2</div>
-</div>
-</div>
-</div>
-
-<div class="testi-slide">
-<span class="testi-quote-big">"</span>
-<p class="testi-body-text">Las clases se hacen amenas y siempre buscan un equilibrio entre ejercicios teóricos y prácticos. Con toda sinceridad, esta academia es increíble!</p>
-<div class="testi-author-row">
-<div class="testi-badge" style="background:#9B59B6;">AF</div>
-<div class="testi-author-meta">
-<div class="testi-author-name">Antía Fernández Santiago</div>
-<div class="testi-author-exam">APTIS Advanced</div>
-</div>
-</div>
-</div>
-
-<div class="testi-slide">
-<span class="testi-quote-big">"</span>
-<p class="testi-body-text">Me saqué el B2 de Cambridge yendo a clases cada semana y no puedo estar más agradecida. La recomiendo 100% para clases de preparación de exámenes y de conversación.</p>
-<div class="testi-author-row">
-<div class="testi-badge" style="background:#5C9E2E;">CF</div>
-<div class="testi-author-meta">
-<div class="testi-author-name">Cristina F.C.</div>
-<div class="testi-author-exam">Cambridge B2</div>
-</div>
-</div>
-</div>
-
-<div class="testi-slide">
-<span class="testi-quote-big">"</span>
-
-<p class="testi-body-text">Llevo estudiando inglés con Vivien seis años y he conseguido el B1, el B2 y el C1. La profesora es increíble y hace que aprender sea algo muy natural y cercano. Totalmente recomendada.</p>
-<div class="testi-author-row">
-<div class="testi-badge" style="background:#1B4D6E;">LC</div>
-<div class="testi-author-meta">
-
-<div class="testi-author-name">Lucía Cid</div>
-
-<div class="testi-author-exam">Cambridge and Aptis Certification Student</div>
-</div>
-</div>
-</div>
-
-<div class="testi-slide">
-<span class="testi-quote-big">"</span>
-<p class="testi-body-text">Las clases online son muy cómodas y efectivas. En pocos meses noté una mejora enorme en mi pronunciación y en mi capacidad para mantener conversaciones fluidas en inglés.</p>
-<div class="testi-author-row">
-<div class="testi-badge" style="background:#C5D62B; color:#260F26;">MG</div>
-<div class="testi-author-meta">
-<div class="testi-author-name">Marta González</div>
-<div class="testi-author-exam">IELTS Academic</div>
-</div>
-</div>
-</div>
-
-<div class="testi-slide">
-<span class="testi-quote-big">"</span>
-<p class="testi-body-text">Empecé desde cero y en un año ya me siento capaz de mantener reuniones de trabajo en inglés. La metodología es muy práctica y motivadora desde el primer día.</p>
-<div class="testi-author-row">
-<div class="testi-badge" style="background:#9B59B6;">JR</div>
-<div class="testi-author-meta">
-<div class="testi-author-name">Javier Rodríguez</div>
-<div class="testi-author-exam">Business English</div>
-</div>
-</div>
-</div>
-
-<div class="testi-slide">
-<span class="testi-quote-big">"</span>
-<p class="testi-body-text">Prepararme para el APTIS con esta academia fue la mejor decisión. Las clases son dinámicas, los materiales son excelentes y la atención personalizada marca la diferencia.</p>
-<div class="testi-author-row">
-<div class="testi-badge" style="background:#2E7D5E;">PL</div>
-<div class="testi-author-meta">
-<div class="testi-author-name">Paula López</div>
-<div class="testi-author-exam">APTIS Advanced</div>
-</div>
-</div>
-</div>
-
-<div class="testi-slide">
-<span class="testi-quote-big">"</span>
-<p class="testi-body-text">Necesitaba el examen APTIS de inglés y la profesora me ayudó a conseguir el nivel avanzado C1. Ella es nativa, lo que ayudó mucho a coger soltura en listening y speaking. Además siempre estuvo disponible para resolver cualquier duda y facilitó mucho material. Thanks a lot !</p>
-<div class="testi-author-row">
-<div class="testi-badge" style="background:#C5D62B; color:#260F26;">AL</div>
-<div class="testi-author-meta">
-<div class="testi-author-name">Alba Loureiro</div>
-<div class="testi-author-exam">APTIS Advanced C1</div>
-</div>
-</div>
-</div>
-</div>
-
-<button aria-label="Next" class="testi-next" id="testiNext">
-<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><polygon points="9,4 9,20 19,12" fill="currentColor"/></svg>
-</button>
-</div>
-</div>
-
-<div style="grid-column: 2; margin-top: -16px;">
-<div class="testi-dots-row" id="testiDots">
-<button class="testi-dot active" data-i="0"></button>
-<button class="testi-dot" data-i="1"></button>
-<button class="testi-dot" data-i="2"></button>
-<button class="testi-dot" data-i="3"></button>
-<button class="testi-dot" data-i="4"></button>
-<button class="testi-dot" data-i="5"></button>
-<button class="testi-dot" data-i="6"></button>
-<button class="testi-dot" data-i="7"></button>
-<button class="testi-dot" data-i="8"></button>
-</div>
-</div>
+<section class="section ruled" id="tutors" data-screen-label="Tutors">
+  <div class="wrap">
+    <div class="lead-grid" style="margin-bottom:clamp(32px,4vw,56px);">
+      <div class="lg-aside reveal">
+        <h2 class="h2">Meet the people who teach you.</h2>
+      </div>
+      <div class="reveal d1"><p class="body body--measure">Certified native speakers with years of online teaching experience and a warm, patient approach. Choose the tutor who fits your goals — and book your hours directly in their calendar.</p></div>
+    </div>
+    <div class="tutor-carousel reveal" data-tutor-carousel>
+      <div class="tutor-track">
+      <article class="tutor-card">
+        <div class="ph"><img src="images/tutors/vivien.jpg" alt="Vivien May" /></div>
+        <div class="body-in">
+          <div class="tc-head">
+            <div><h3 class="h3">Vivien May</h3><p class="tc-role">CELTA-Certified Teacher</p></div>
+            <button class="tc-online" type="button" aria-label="Vivien is online now"><span class="dot" aria-hidden="true"></span>Online<span class="tip">Available now</span></button>
+          </div>
+          <div class="tc-badges"><span class="tc-badge"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 18.6 6 21.4l1.4-6.8L2.3 9.9l6.9-.8z"/></svg>Super Tutor</span><span class="tc-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg>Professional</span></div>
+          <dl class="tc-facts">
+            <div><dt>From</dt><dd>Scotland</dd></div>
+            <div><dt>Teach</dt><dd class="hl">Native English</dd></div>
+            <div><dt>Also Speak</dt><dd class="hl">Advanced Spanish</dd></div>
+          </dl>
+        </div>
+      </article>
+      <article class="tutor-card">
+        <div class="ph"><img src="images/tutors/tamara.jpg" alt="Tamara Jane" /></div>
+        <div class="body-in">
+          <div class="tc-head">
+            <div><h3 class="h3">Tamara Jane</h3><p class="tc-role">TEFL-Certified Teacher</p></div>
+            <button class="tc-online" type="button" aria-label="Tamara is online now"><span class="dot" aria-hidden="true"></span>Online<span class="tip">Available now</span></button>
+          </div>
+          <div class="tc-badges"><span class="tc-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg>Professional</span><span class="tc-badge alt"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 21l2.1-5.7A8.4 8.4 0 1 1 21 11.5z"/></svg>Top Conversation</span></div>
+          <dl class="tc-facts">
+            <div><dt>From</dt><dd>Spain</dd></div>
+            <div><dt>Teach</dt><dd class="hl">Native English</dd></div>
+            <div><dt>Also Speak</dt><dd class="hl">Native Spanish</dd></div>
+          </dl>
+        </div>
+      </article>
+      <article class="tutor-card">
+        <div class="ph"><img src="images/tutors/kayleigh.jpg" alt="Kayleigh María" /></div>
+        <div class="body-in">
+          <div class="tc-head">
+            <div><h3 class="h3">Kayleigh María</h3><p class="tc-role">Trinity-Certified Teacher</p></div>
+            <button class="tc-online" type="button" aria-label="Kayleigh is online now"><span class="dot" aria-hidden="true"></span>Online<span class="tip">Available now</span></button>
+          </div>
+          <div class="tc-badges"><span class="tc-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg>Professional</span><span class="tc-badge alt"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8.5 12.5l2.4 2.4 4.6-5"/></svg>Exam Ready</span></div>
+          <dl class="tc-facts">
+            <div><dt>From</dt><dd>Spain</dd></div>
+            <div><dt>Teach</dt><dd class="hl">Native English</dd></div>
+            <div><dt>Also Speak</dt><dd class="hl">Native Spanish</dd></div>
+          </dl>
+        </div>
+      </article>
+      <article class="tutor-card">
+        <div class="ph"><img src="images/tutors/lucia.jpg" alt="Lucía Romero" /></div>
+        <div class="body-in">
+          <div class="tc-head">
+            <div><h3 class="h3">Lucía Romero</h3><p class="tc-role">DELTA-Certified Teacher</p></div>
+            <button class="tc-online" type="button" aria-label="Lucía is online now"><span class="dot" aria-hidden="true"></span>Online<span class="tip">Available now</span></button>
+          </div>
+          <div class="tc-badges"><span class="tc-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg>Professional</span><span class="tc-badge alt"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 19h16M7 16l3-4 3 2 4-6"/></svg>Business Ready</span></div>
+          <dl class="tc-facts">
+            <div><dt>From</dt><dd>Spain</dd></div>
+            <div><dt>Teach</dt><dd class="hl">Bilingual English</dd></div>
+            <div><dt>Also Speak</dt><dd class="hl">Native Spanish</dd></div>
+          </dl>
+        </div>
+      </article>
+      <article class="tutor-card">
+        <div class="ph"><img src="images/tutors/mateus.jpg" alt="Mateus Silva" /></div>
+        <div class="body-in">
+          <div class="tc-head">
+            <div><h3 class="h3">Mateus Silva</h3><p class="tc-role">Business English Coach</p></div>
+            <button class="tc-online" type="button" aria-label="Mateus is online now"><span class="dot" aria-hidden="true"></span>Online<span class="tip">Available now</span></button>
+          </div>
+          <div class="tc-badges"><span class="tc-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg>Professional</span><span class="tc-badge alt"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 19h16M7 16l3-4 3 2 4-6"/></svg>Business Ready</span></div>
+          <dl class="tc-facts">
+            <div><dt>From</dt><dd>Portugal</dd></div>
+            <div><dt>Teach</dt><dd class="hl">Bilingual English</dd></div>
+            <div><dt>Also Speak</dt><dd class="hl">Native Portuguese</dd></div>
+          </dl>
+        </div>
+      </article>
+      <article class="tutor-card">
+        <div class="ph"><img src="images/tutors/daniel.jpg" alt="Daniel Brooks" /></div>
+        <div class="body-in">
+          <div class="tc-head">
+            <div><h3 class="h3">Daniel Brooks</h3><p class="tc-role">CELTA-Certified Teacher</p></div>
+            <button class="tc-online" type="button" aria-label="Daniel is online now"><span class="dot" aria-hidden="true"></span>Online<span class="tip">Available now</span></button>
+          </div>
+          <div class="tc-badges"><span class="tc-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg>Professional</span><span class="tc-badge alt"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 21l2.1-5.7A8.4 8.4 0 1 1 21 11.5z"/></svg>Top Conversation</span></div>
+          <dl class="tc-facts">
+            <div><dt>From</dt><dd>Ireland</dd></div>
+            <div><dt>Teach</dt><dd class="hl">Native English</dd></div>
+            <div><dt>Also Speak</dt><dd class="hl">Conversational French</dd></div>
+          </dl>
+        </div>
+      </article>
+      <article class="tutor-card">
+        <div class="ph"><img src="images/tutors/noor.jpg" alt="Noor Hadid" /></div>
+        <div class="body-in">
+          <div class="tc-head">
+            <div><h3 class="h3">Noor Hadid</h3><p class="tc-role">TESOL-Certified Teacher</p></div>
+            <button class="tc-online" type="button" aria-label="Noor is online now"><span class="dot" aria-hidden="true"></span>Online<span class="tip">Available now</span></button>
+          </div>
+          <div class="tc-badges"><span class="tc-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg>Professional</span><span class="tc-badge alt"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8.5 12.5l2.4 2.4 4.6-5"/></svg>Exam Ready</span></div>
+          <dl class="tc-facts">
+            <div><dt>From</dt><dd>England</dd></div>
+            <div><dt>Teach</dt><dd class="hl">Native English</dd></div>
+            <div><dt>Also Speak</dt><dd class="hl">Native Arabic</dd></div>
+          </dl>
+        </div>
+      </article>
+      </div>
+    </div>
+  </div>
 </section>
 
-<section class="cta-section">
-<img alt="English Books" class="cta-bg-img" src="images/books.jpg"/>
-<div class="cta-overlay"></div>
-<div class="cta-content fade-up">
-<div class="cta-card">
-<h2 class="cta-title">Build real fluency with <span class="cta-chip">🎓</span> expert native English teachers!</h2>
-<p class="cta-sub">Learn naturally with engaging live lessons designed to help you communicate confidently in everyday situations.</p>
-<div class="cta-btns">
-<a class="btn-cta-primary" href="signup.html">Join the Academy →</a>
-<a class="btn-cta-outline" href="book-lesson.html">Meet Our Tutors</a>
-</div>
-<p class="cta-note">
-<svg fill="none" height="12" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="12"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
-          No commitment required · Free first session
-        </p>
-</div>
-</div>
+<section class="section alt ruled" data-screen-label="Materials">
+  <div class="wrap split">
+    <div class="split-content reveal">
+      <span class="kicker"><span class="no">07</span> Learning materials</span>
+      <h2 class="h2" style="margin:18px 0 18px;">Everything you need between classes.</h2>
+      <p class="body body--measure">Every student gets a personalised resource pack, updated to the latest exam formats — so practice continues long after the lesson ends.</p>
+      <ul class="checklist">
+        <li><span class="check" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg></span><span><b>Digital workbooks &amp; grammar guides</b> — matched to your level, on any device.</span></li>
+        <li><span class="check" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg></span><span><b>Real past papers &amp; mock tests</b> — timed practice, marked with feedback.</span></li>
+        <li><span class="check" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg></span><span><b>Audio &amp; pronunciation drills</b> — to sharpen your ear and accent.</span></li>
+      </ul>
+    </div>
+    <div class="split-media reveal d1">
+      <video src="images/materials.mp4" autoplay loop muted playsinline aria-label="Workbooks and lesson materials" style="object-position:50% 78%;"></video>
+    </div>
+  </div>
 </section>
 
-<footer>
-<div class="footer-top">
-<div>
-<a class="footer-logo" href="#">
-<img alt="Alba English" src="images/logo-full.png" style="height:64px;width:auto;filter:brightness(0) invert(1);opacity:0.9;"/>
-</a>
-<p class="footer-tagline">Helping students speak English confidently from anywhere in the world.</p>
-<div style="margin-top:22px;">
-</div>
-</div>
-<div>
-<div class="footer-col-title">Navigation</div>
-<ul class="footer-links">
-<li><a href="#home">Home</a></li>
-<li><a href="#courses">English Courses</a></li>
-<li><a href="#classes">Live Classes</a></li>
-<li><a href="book-lesson.html">Book a Lesson</a></li>
-</ul>
-</div>
-<div>
-<div class="footer-col-title">English Courses</div>
-<ul class="footer-links">
-<li><a href="#courses">Starter English</a></li>
-<li><a href="#courses">Conversation Lab</a></li>
-<li><a href="#courses">Exam Mastery</a></li>
-</ul>
-</div>
-<div>
-<div class="footer-col-title">Contact</div>
-<ul class="footer-links">
-<li><a href="#">Centro de Estudios Cubick</a></li>
-<li><a href="#">Rúa Manuel Pereira, 22, 32003 Ourense</a></li>
-<li><a href="mailto:info@albaenglish.academy">info@albaenglish.academy</a></li>
-</ul>
-</div>
-</div>
-<div class="footer-bottom">
-<span class="footer-copy">© 2026 Alba English. All Rights Reserved.</span>
-<div class="footer-subnav">
-<a class="up-btn" href="#">Back tae the top ↑</a>
-</div>
-</div>
+<section class="section ruled" data-screen-label="Testimonials">
+  <div class="wrap">
+    <div class="lead-grid" style="margin-bottom:clamp(28px,3vw,44px);">
+      <div class="lg-aside reveal"><span class="kicker"><span class="no">08</span> Student stories</span></div>
+    </div>
+    <div class="quote-block">
+      <div class="reveal review-feature" id="reviewFeature">
+        <p class="bigquote" style="line-height: 1.2"></p>
+        <div class="quote-by" style="gap: 14px; justify-content: flex-start"><span class="av" aria-hidden="true"></span><span style="display:flex;flex-direction:column;justify-content:center;gap:2px;text-align:left"><b style="line-height:1.15"></b><span></span></span></div>
+      </div>
+      <div class="review-mini-wrap reveal d1">
+        <div class="mini-quotes" id="reviewMini">
+          <blockquote>
+            <span class="stars" aria-hidden="true">★★★★★</span>
+            <p>I needed evening classes and Alba made it easy. I passed Cambridge C1 Advanced with a teacher who genuinely cared about my process.</p>
+            <footer></footer>
+          </blockquote>
+          <blockquote>
+            <span class="stars" aria-hidden="true">★★★★★</span>
+            <p>I needed evening classes and Alba made it easy. I passed Cambridge C1 Advanced with a teacher who genuinely cared about my process.</p>
+            <footer></footer>
+          </blockquote>
+        </div>
+        <div class="review-dots" id="reviewDots" role="tablist" aria-label="Choose a review"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section alt ruled" data-screen-label="FAQ">
+  <div class="wrap">
+    <div style="text-align:center;margin-bottom:clamp(36px,4vw,56px);">
+      <span class="kicker" style="justify-content:center;"><span class="no">09</span> Questions</span>
+      <h2 class="h2" style="margin-top:16px;">Good to know.</h2>
+    </div>
+    <div class="faq reveal">
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false"><span>How does the free trial lesson work?</span><span class="faq-ic" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></span></button>
+        <div class="faq-a"><div class="faq-a-inner">It's a friendly 30-minute online lesson with a native tutor. We check your level, talk through your goals and show you how we teach — with no payment and no obligation to continue.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false"><span>Are classes one-to-one or in groups?</span><span class="faq-ic" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></span></button>
+        <div class="faq-a"><div class="faq-a-inner">Both are available. One-to-one gives you maximum speaking time and a fully tailored plan; small groups add motivation and conversation practice at a lower price. Many students combine the two.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false"><span>Do you provide the learning materials?</span><span class="faq-ic" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></span></button>
+        <div class="faq-a"><div class="faq-a-inner">Yes. Your workbooks, practice papers, audio and progress tracker are included with your lessons. If a specific official coursebook is recommended for your exam, we'll let you know in advance.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false"><span>How quickly can I improve?</span><span class="faq-ic" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></span></button>
+        <div class="faq-a"><div class="faq-a-inner">It depends on your starting point and how often you practise, but most students notice a real difference within a few weeks. After your trial we'll give you an honest, realistic timeline.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false"><span>What if I need to reschedule a class?</span><span class="faq-ic" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></span></button>
+        <div class="faq-a"><div class="faq-a-inner">Life happens — you can reschedule with reasonable notice through your account, and your tutor will help you find a new time that works.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section--snug" id="contact" data-screen-label="Contact">
+  <div class="wrap">
+    <div class="cta reveal">
+      <img src="images/cta-home.jpg" alt="" class="cta-photo" />
+      <div class="cta-inner">
+        <span class="kicker kicker--on-dark"><span class="no">—</span> Get in touch</span>
+        <h2 class="h2">Start with a free trial lesson.</h2>
+        <p class="body">No payment, no commitment — just a friendly first class to find your level and set your goals.</p>
+        <div class="cta-actions">
+          <a href="book.html" class="btn btn-primary btn--lg">Book a free trial <span class="ar" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+          <a href="contact.html" class="btn btn-ghost-light btn--lg">Contact us</a>
+        </div>
+        <div class="cta-meta">
+          <a href="mailto:info@albaenglish.academy">info@albaenglish.academy</a>
+          <a href="tel:+34625040861">+34 625 040 861</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <img src="images/logo-cream.png" alt="Alba English" />
+        <p>Online English with native tutors who'll have ye blethering away braw in nae time, a wee bit of craic included, ye ken?</p>
+      </div>
+      <div class="foot-col">
+        <h4>Learn</h4>
+        <ul>
+          <li><a href="exams.html">Exams &amp; materials</a></li>
+          <li><a href="tutors.html">Tutors &amp; booking</a></li>
+          <li><a href="exams.html#how-lessons-work">How it works</a></li>
+          <li><a href="index.html#about">About us</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h4>Academy</h4>
+        <ul>
+          <li><a href="book.html">Book a free trial</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="login.html">Log in</a></li>
+          <li><a href="signup.html">Create account</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:info@albaenglish.academy">info@albaenglish.academy</a></li>
+          <li><a href="tel:+34625040861">+34 625 040 861</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 Alba English. All rights reserved.</span>
+      <div class="foot-legal">
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+        <a href="cookies.html">Cookies</a>
+      </div>
+    </div>
+  </div>
 </footer>
-</div>
-<script src="js/script.js" defer></script>
 
-<a aria-label="WhatsApp" class="whatsapp-float" href="https://wa.me/34625040861?text=Hola%2C%20me%20gustar%C3%ADa%20obtener%20m%C3%A1s%20informaci%C3%B3n%20sobre%20las%20clases%20de%20ingl%C3%A9s." rel="noopener noreferrer" target="_blank">
-<svg viewbox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M16 0C7.164 0 0 7.163 0 16c0 2.822.738 5.469 2.031 7.766L0 32l8.469-2.016A15.93 15.93 0 0 0 16 32c8.836 0 16-7.163 16-16S24.836 0 16 0zm0 29.333a13.27 13.27 0 0 1-6.771-1.854l-.485-.287-5.026 1.196 1.228-4.896-.317-.502A13.236 13.236 0 0 1 2.667 16C2.667 8.636 8.636 2.667 16 2.667S29.333 8.636 29.333 16 23.364 29.333 16 29.333zm7.307-9.907c-.4-.2-2.364-1.164-2.731-1.298-.367-.133-.633-.2-.9.2-.267.4-1.032 1.298-1.265 1.565-.233.267-.467.3-.867.1-.4-.2-1.688-.623-3.214-1.98-1.188-1.057-1.99-2.363-2.222-2.763-.234-.4-.025-.617.175-.816.18-.18.4-.467.6-.7.2-.233.267-.4.4-.667.133-.267.067-.5-.033-.7-.1-.2-.9-2.166-1.233-2.966-.324-.78-.654-.674-.9-.686l-.767-.013c-.267 0-.7.1-1.067.5s-1.4 1.366-1.4 3.333 1.433 3.866 1.633 4.133c.2.267 2.82 4.3 6.833 6.033.955.413 1.7.66 2.281.845.958.305 1.831.262 2.52.159.769-.114 2.364-.966 2.697-1.9.333-.933.333-1.733.233-1.9-.1-.167-.367-.267-.767-.467z"></path></svg>
-</a>
+<script src="js/script.js"></script>
+<script>
+/* Rotating student reviews — smooth crossfade through the full set */
+(function(){
+  var REVIEWS=[
+    {q:'Sitio 100% recomendable. Conseguí <span class="em">sacarme el B2 de Cambridge en tiempo récord</span> — se adapta a tu ritmo y es una excelente profesional, muy trabajadora y atenta.',name:'Saúl Fernández',role:'Cambridge B2 First'},
+    {q:'¡Las mejores clases de inglés de todo Ourense! <span class="em">Me saqué el B2 de Cambridge</span> yendo a clase cada semana. La recomiendo 100% para preparación de exámenes y conversación.',name:'Cristina Fc',role:'Cambridge B2 First'},
+    {q:'Estuve seis años y <span class="em">me saqué el B1, B2 y C1</span>. La profesora es increíble y hace el aprendizaje muy ameno, dando la clase de una manera muy cercana. ¡Totalmente recomendado!',name:'Lucía Cid',role:'Cambridge B1 · B2 · C1'},
+    {q:'Me encantó esta academia. Estuve en un grupo reducido preparando el <span class="em">nivel C1 de inglés</span>, y la profesora es muy atenta y siempre dispuesta a darte material para ayudarte.',name:'Sokhna',role:'Cambridge C1 Advanced'},
+    {q:'Necesitaba el examen <span class="em">APTIS y conseguí el nivel C1</span>. La profesora es nativa, lo que ayudó muchísimo con el listening y el speaking, y siempre facilitó mucho material. Thanks a lot!',name:'Alba Loureiro',role:'Aptis C1'},
+    {q:'Llevo <span class="em">diez años en esta academia</span> y puedo garantizar su completa eficacia. El ambiente es maravilloso y se nota cada día lo mucho que les importan sus alumnos.',name:'Antía Fernández',role:'Cambridge C1 Advanced'},
+    {q:'Aprendí muchísimo en el Centro de Estudios Cubick. Los profesores son muy atentos y <span class="em">aportan materiales útiles</span> para el aprendizaje personal. La recomendaría a cualquiera que quiera aprender o reforzar un idioma.',name:'Lola García',role:'General English'},
+    {q:'Studying online from Milan was effortless. My tutor <span class="em">tailored every lesson to my goals</span> and I finally feel confident speaking in meetings.',name:'Giulia Romano',role:'Business English'},
+    {q:'I prepared for <span class="em">IELTS entirely online and scored 7.5</span>. The mock tests and detailed feedback after each class were exactly what I needed.',name:'Mehmet Yılmaz',role:'IELTS 7.5'},
+    {q:'The flexibility of online classes fit perfectly around my job. After a few months my <span class="em">fluency and pronunciation improved hugely!</span>',name:'Amélie Dubois',role:'Conversation & Fluency'},
+    {q:'I needed evening classes and Alba made it easy. I <span class="em">passed Cambridge C1 Advanced</span> with a teacher who genuinely cared about my process.',name:'Lukas Schäfer',role:'Cambridge C1 Advanced'}
+  ];
+  var feature=document.getElementById('reviewFeature');
+  var mini=document.getElementById('reviewMini');
+  var dotsWrap=document.getElementById('reviewDots');
+  if(!feature||!mini||!dotsWrap)return;
+  var fq=feature.querySelector('.bigquote');
+  var fname=feature.querySelector('.quote-by b');
+  var frole=feature.querySelector('.quote-by > span > span');
+  var minis=mini.querySelectorAll('blockquote');
+  var N=REVIEWS.length, i=0, timer=null, paused=false;
+
+  REVIEWS.forEach(function(_,n){
+    var b=document.createElement('button');
+    b.type='button';b.setAttribute('role','tab');
+    b.setAttribute('aria-label','Review '+(n+1));
+    b.addEventListener('click',function(){go(n,true);});
+    dotsWrap.appendChild(b);
+  });
+  var dots=dotsWrap.querySelectorAll('button');
+
+  function fill(idx){
+    var r=REVIEWS[idx];
+    feature.setAttribute('data-r',idx);
+    fq.innerHTML='\u201C'+r.q+'\u201D';
+    fname.textContent=r.name;
+    frole.textContent=r.role;
+    [1,2].forEach(function(off,k){
+      var rr=REVIEWS[(idx+off)%N];
+      var bq=minis[k];
+      bq.querySelector('p').textContent=rr.q.replace(/<[^>]+>/g,'');
+      bq.querySelector('footer').textContent=rr.name+' · '+rr.role;
+    });
+    dots.forEach(function(d,k){d.setAttribute('aria-current',k===idx?'true':'false');});
+  }
+  function go(n,manual){
+    if(n===i&&manual)return;
+    i=(n+N)%N;
+    feature.classList.add('is-swapping');
+    minis.forEach(function(b){b.classList.add('is-swapping');});
+    setTimeout(function(){
+      fill(i);
+      feature.classList.remove('is-swapping');
+      minis.forEach(function(b){b.classList.remove('is-swapping');});
+    },420);
+    if(manual)restart();
+  }
+  function tick(){ if(!paused) go(i+1,false); }
+  function restart(){ if(timer)clearInterval(timer); timer=setInterval(tick,5200); }
+
+  fill(0);
+  dots[0].setAttribute('aria-current','true');
+  restart();
+  var sec=feature.closest('section');
+  if(sec){
+    sec.addEventListener('mouseenter',function(){paused=true;});
+    sec.addEventListener('mouseleave',function(){paused=false;});
+  }
+})();
+</script>
+<script>
+/* Tutor cards link straight to that tutor's calendar. On the home page this
+   carousel has no booking section of its own, so a click jumps to the tutors
+   page and preselects the tutor (?tutor=…#bookingSection). A custom
+   "View calendar" cursor follows the pointer on hover-capable devices. */
+(function(){
+  var cards = document.querySelectorAll('.tutor-carousel .tutor-card');
+  if(!cards.length) return;
+
+  // First name, accent-stripped, matches the booking tab data-tutor key.
+  var keyOf = function(s){
+    return (s||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').trim().split(/\s+/)[0].toLowerCase();
+  };
+
+  var hasBooking = !!document.getElementById('bookingSection');
+  var canHover = window.matchMedia && window.matchMedia('(hover:hover) and (pointer:fine)').matches;
+  var cur = null;
+  if(canHover){
+    cur = document.createElement('div');
+    cur.className = 'tc-cursor';
+    cur.innerHTML = '<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg><span>View calendar</span>';
+    document.body.appendChild(cur);
+    window.addEventListener('pointerup', function(){ cur.classList.remove('is-down'); });
+  }
+
+  function open(name){
+    if(hasBooking){
+      var t = document.querySelector('.tutor-tab[data-tutor="'+name+'"]');
+      if(t) t.click();                                 // preselect this tutor's calendar
+      if(location.hash === '#bookingSection'){
+        history.replaceState(null, '', location.pathname + location.search);
+      }
+      location.hash = 'bookingSection';
+    } else {
+      // Cross-page: open the tutors-page calendar with this tutor preselected.
+      location.href = 'tutors.html?tutor=' + encodeURIComponent(name) + '#bookingSection';
+    }
+  }
+
+  cards.forEach(function(card){
+    var full = ((card.querySelector('.h3')||{}).textContent || '').trim();
+    var key  = keyOf(full);
+    card.setAttribute('role','link');
+    card.setAttribute('tabindex','0');
+    card.setAttribute('aria-label','View ' + full + '\u2019s calendar');
+
+    if(canHover){
+      card.style.cursor = 'none';
+      card.addEventListener('mouseenter', function(){ cur.classList.add('is-on'); });
+      card.addEventListener('mouseleave', function(){ cur.classList.remove('is-on'); });
+      card.addEventListener('mousemove', function(e){
+        cur.style.left = e.clientX + 'px';
+        cur.style.top  = e.clientY + 'px';
+      });
+      card.addEventListener('pointerdown', function(){ cur.classList.add('is-down'); });
+    } else {
+      card.style.cursor = 'pointer';
+    }
+
+    card.addEventListener('click', function(e){
+      // Let the presence dot keep its own click.
+      if(e.target.closest('.tc-online')) return;
+      // Capture-phase + stop: navigate before the empty image-slot can open its
+      // file browser (which would otherwise swallow the click). Photos are still
+      // added by dragging an image onto the slot (drag events are unaffected).
+      e.preventDefault();
+      e.stopPropagation();
+      open(key);
+    }, true);
+    card.addEventListener('keydown', function(e){
+      if(e.key === 'Enter' || e.key === ' '){ e.preventDefault(); open(key); }
+    });
+  });
+})();
+</script>
 </body>
 </html>
