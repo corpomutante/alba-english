@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Log in, Alba English</title>
+<meta name="description" content="Log in to your Alba English account to manage lessons, materials and progress." />
+<link rel="icon" type="image/png" href="images/favicon.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles/styles.css" />
+</head>
+<body>
+
+<header class="site-head">
+  <div class="wrap head-inner">
+    <a href="index.html" class="brand" aria-label="Alba English home"><img src="images/logo.png" alt="Alba English" /></a>
+    <nav class="nav" id="nav" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="exams.html">Exams &amp; materials</a>
+      <a href="tutors.html">Tutors</a>
+      <a href="contact.html">Contact</a>
+      <a href="login.html" class="nav-only-mobile">Log in</a>
+      <a href="book.html" class="nav-only-mobile">Book a free trial</a>
+    </nav>
+    <div class="head-cta">
+      <a href="login.html" class="head-login">Log in</a>
+      <a href="book.html" class="btn btn-primary btn--sm">Book a free trial</a>
+      <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="nav"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main>
+<div class="auth" data-screen-label="Log in">
+  <!-- Brand panel -->
+  <aside class="auth-aside" style="background-position: center center; align-items: flex-start; justify-content: center; flex-direction: column; padding: clamp(48px,6vw,80px) clamp(48px,6vw,80px) clamp(48px,6vw,80px) max(40px, calc((100vw - 1200px) / 2 + 40px))">
+    <blockquote class="auth-q" id="authQuote">
+      <span class="auth-q-text">It is never too late to be what you might have been.</span>
+      <cite>George Eliot · English novelist</cite>
+    </blockquote>
+  </aside>
+
+  <!-- Form -->
+  <div class="auth-main">
+    <div class="auth-form">
+      <a href="index.html" class="auth-back"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg>Back to home</a>
+      <a href="index.html" class="auth-logo-sm" aria-label="Alba English home"><img src="images/logo.png" alt="Alba English" /></a>
+      <h1 style="font-family: Sora; font-weight: 800; font-size: 48px;">Welcome back!</h1>
+      <p class="sub">Log in to manage your lessons, materials and bookings.</p>
+
+      <form id="loginForm" data-validate novalidate>
+        <div class="field">
+          <label for="email">Email <span class="req" aria-hidden="true">*</span></label>
+          <input class="input" type="email" id="email" name="email" autocomplete="email" placeholder="you@example.com" required />
+          <span class="field-err">Please enter a valid email address.</span>
+        </div>
+        <div class="field">
+          <label for="password" style="display:flex;justify-content:space-between;align-items:center;"><span>Password <span class="req" aria-hidden="true">*</span></span><a href="#" class="forgot">Forgot password?</a></label>
+          <div class="pw-wrap">
+            <input class="input" type="password" id="password" name="password" autocomplete="current-password" placeholder="Your password" required />
+            <button type="button" class="pw-toggle" data-pw aria-label="Show password"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button>
+          </div>
+          <span class="field-err">Please enter your password.</span>
+        </div>
+        <div class="checkbox-row" style="margin-bottom:24px;">
+          <input type="checkbox" id="remember" name="remember" />
+          <label for="remember">Keep me logged in on this device</label>
+        </div>
+        <button type="submit" class="btn btn-primary btn--lg btn--block">Log in <span class="ar" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></button>
+      </form>
+
+      <p class="auth-alt">New to Alba English? <a href="signup.html">Create an account</a></p>
+    </div>
+  </div>
+</div>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <img src="images/logo-cream.png" alt="Alba English" />
+        <p>Online English with native tutors who'll have ye blethering away braw in nae time, a wee bit of craic included, ye ken?</p>
+      </div>
+      <div class="foot-col">
+        <h4>Learn</h4>
+        <ul>
+          <li><a href="exams.html">Exams &amp; materials</a></li>
+          <li><a href="tutors.html">Tutors &amp; booking</a></li>
+          <li><a href="exams.html#how-lessons-work">How it works</a></li>
+          <li><a href="index.html#about">About us</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h4>Academy</h4>
+        <ul>
+          <li><a href="book.html">Book a free trial</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="login.html">Log in</a></li>
+          <li><a href="signup.html">Create account</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:info@albaenglish.academy">info@albaenglish.academy</a></li>
+          <li><a href="tel:+34600123456">+34 600 123 456</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 Alba English. All rights reserved.</span>
+      <div class="foot-legal">
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+        <a href="cookies.html">Cookies</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+<script>
+/* Rotating testimonials in the auth brand panel, smooth fade in/out */
+(function(){
+  var QUOTES=[
+    {q:'It is never too late to be what you might have been.',by:'George Eliot · English novelist'},
+    {q:'Education is the point at which we decide whether we love the world enough to assume responsibility for it.',by:'Hannah Arendt · political theorist'},
+    {q:'The beginning is always today.',by:'Mary Wollstonecraft · English philosopher'},
+    {q:'The learning process is something you can incite, literally incite, like a riot.',by:'Audre Lorde · poet & activist'},
+    {q:'You have to act as if it were possible to radically transform the world.',by:'Angela Davis · activist & scholar'},
+    {q:'We delight in the beauty of the butterfly, but rarely admit the changes it has gone through.',by:'Maya Angelou · poet'},
+    {q:'The classroom remains the most radical space of possibility.',by:'bell hooks · writer & educator'},
+    {q:'There is no gate, no lock, no bolt that you can set upon the freedom of my mind.',by:'Virginia Woolf · English writer'},
+    {q:'Those who do not move, do not notice their chains.',by:'Rosa Luxemburg · revolutionary'}
+  ];
+  var box=document.getElementById('authQuote');
+  if(!box) return;
+  var textEl=box.querySelector('.auth-q-text');
+  var citeEl=box.querySelector('cite');
+  var i=0;
+  function show(n){
+    box.classList.add('is-fading');
+    setTimeout(function(){
+      var r=QUOTES[n];
+      textEl.textContent=r.q;
+      citeEl.textContent=r.by;
+      box.classList.remove('is-fading');
+    },450);
+  }
+  if(!window.matchMedia||!matchMedia('(prefers-reduced-motion: reduce)').matches){
+    setInterval(function(){ i=(i+1)%QUOTES.length; show(i); },6000);
+  }
+})();
+</script>
+</body>
+</html>
